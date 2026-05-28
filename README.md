@@ -25,7 +25,7 @@ The goal is not just design - but to build a realistic healthcare experience usi
 🌐 Live Demo
 
 🔗 Live Website:
-https://69bc29e2ce61ee007e4630ac--celebrated-chimera-9bdec1.netlify.app/
+https://q9-multispecialty-hospital.vercel.app/
 
 🧠 Core Idea
 
