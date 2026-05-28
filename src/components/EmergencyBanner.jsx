@@ -34,7 +34,7 @@ export default function EmergencyBanner() {
 
           {/* Call Button */}
           <a
-            href="tel:+917702021224"
+            href="tel:+62819555831"
             className="flex items-center gap-1 bg-white text-red-600 px-3 py-1.5 rounded-lg text-sm font-bold hover:bg-red-50 transition"
           >
             <Phone className="w-3.5 h-3.5" />

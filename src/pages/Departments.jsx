@@ -93,7 +93,7 @@ export default function Departments() {
 
               <div className="flex gap-4 flex-wrap">
                 <a
-                  href="tel:+917702021224"
+                  href="tel:+62819555831"
                   className="px-8 py-3 bg-blue-600 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition"
                 >
                   Call Help Desk

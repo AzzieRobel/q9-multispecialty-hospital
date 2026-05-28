@@ -80,6 +80,7 @@ export default function AppointmentForm() {
               <input
                 required
                 type="text"
+                placeholder="Enter your full name"
                 className="w-full px-4 py-3 rounded-xl border"
                 value={formData.name}
                 onChange={(e) =>
@@ -94,6 +95,7 @@ export default function AppointmentForm() {
               <input
                 required
                 type="tel"
+                placeholder="Enter your phone number"
                 className="w-full px-4 py-3 rounded-xl border"
                 value={formData.phone}
                 onChange={(e) =>
@@ -108,6 +110,7 @@ export default function AppointmentForm() {
               <input
                 required
                 type="email"
+                placeholder="Enter your email address"
                 className="w-full px-4 py-3 rounded-xl border"
                 value={formData.email}
                 onChange={(e) =>
@@ -167,6 +170,7 @@ export default function AppointmentForm() {
               <input
                 required
                 type="date"
+                placeholder="Select a date"
                 min={new Date().toISOString().split("T")[0]}
                 className="w-full px-4 py-3 rounded-xl border"
                 value={formData.date}
@@ -182,6 +186,7 @@ export default function AppointmentForm() {
               <input
                 required
                 type="time"
+                placeholder="Select a time"
                 className="w-full px-4 py-3 rounded-xl border"
                 value={formData.time}
                 onChange={(e) =>
@@ -197,6 +202,7 @@ export default function AppointmentForm() {
             <label className="text-sm font-semibold">Message</label>
             <textarea
               rows={4}
+              placeholder="Write your message or questions here"
               className="w-full px-4 py-3 rounded-xl border"
               value={formData.message}
               onChange={(e) =>
