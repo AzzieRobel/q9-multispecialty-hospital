@@ -48,10 +48,10 @@ export default function Appointment() {
               <h3 className="text-xl font-bold mb-4">Need Emergency Help?</h3>
               <p className="text-blue-100 mb-6">If you have a medical emergency, please call our 24/7 hotline immediately.</p>
               <a
-                href="tel:+15551234567"
+                href="tel:+62819555831"
                 className="flex items-center justify-center w-full py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all"
               >
-                <Phone className="mr-2 h-5 w-5" /> +91  7702021224
+                <Phone className="mr-2 h-5 w-5" /> +62 819555831
               </a>
             </div>
           </div>

@@ -7,16 +7,38 @@ import { Shield, Users, Zap, Heart, ArrowRight, Quote, Phone } from 'lucide-reac
 import { Link } from 'react-router-dom';
 
 const features = [
-  { icon: Zap, title: '24/7 Emergency', desc: 'Round-the-clock emergency medical services with rapid response teams.' },
-  { icon: Users, title: 'Qualified Doctors', desc: 'Expert medical professionals with years of experience in various fields.' },
-  { icon: Shield, title: 'Advanced Tech', desc: 'Equipped with the latest medical technology for precise diagnosis.' },
-  { icon: Heart, title: 'Patient Care', desc: 'Compassionate care focused on patient comfort and recovery.' },
-];
-const accents = [
-  "from-blue-500 to-blue-300",
-  "from-green-500 to-green-300",
-  "from-purple-500 to-purple-300",
-  "from-red-500 to-red-300"
+  {
+    icon: Zap,
+    title: '24/7 Emergency',
+    desc: 'Round-the-clock emergency medical services with rapid response teams.',
+    accent: 'from-blue-500 to-blue-300',
+    iconBg: 'bg-blue-50',
+    iconColor: 'text-blue-600'
+  },
+  {
+    icon: Users,
+    title: 'Qualified Doctors',
+    desc: 'Expert medical professionals with years of experience in various fields.',
+    accent: 'from-green-500 to-green-300',
+    iconBg: 'bg-green-50',
+    iconColor: 'text-green-600'
+  },
+  {
+    icon: Shield,
+    title: 'Advanced Tech',
+    desc: 'Equipped with the latest medical technology for precise diagnosis.',
+    accent: 'from-purple-500 to-purple-300',
+    iconBg: 'bg-purple-50',
+    iconColor: 'text-purple-600'
+  },
+  {
+    icon: Heart,
+    title: 'Patient Care',
+    desc: 'Compassionate care focused on patient comfort and recovery.',
+    accent: 'from-red-500 to-red-300',
+    iconBg: 'bg-red-50',
+    iconColor: 'text-red-600'
+  },
 ];
 
 const testimonials = [
@@ -58,7 +80,7 @@ export default function Home() {
           </div>
 
           <a
-            href="tel:+917702021224"
+            href="tel:+62819555831"
             className="bg-white text-red-600 px-8 py-4 rounded-2xl font-bold text-lg flex items-center gap-3 hover:bg-red-50 hover:scale-105 transition-all shadow-lg"
           >
             <Phone className="h-5 w-5" />
@@ -74,28 +96,30 @@ export default function Home() {
           {features.map((feature, i) => (
             <div
               key={i}
-              className="group relative bg-white hover:bg-blue-50/30 rounded-3xl p-6 border border-slate-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="group relative bg-white hover:bg-blue-50/30 rounded-3xl p-6 border border-slate-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg h-full flex flex-col overflow-hidden"
             >
 
               {/* 🔥 Gradient Top Accent */}
               <div
-                className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${accents[i]} rounded-t-3xl`}
+                className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${feature.accent} rounded-none`}
               ></div>
 
-              {/* Icon */}
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-100 transition">
-                <feature.icon className="h-6 w-6 text-blue-600" />
+              <div className="mt-2 flex-1 flex flex-col">
+                {/* Icon */}
+                <div className={`${feature.iconBg} w-12 h-12 rounded-xl flex items-center justify-center mb-5 group-hover:bg-opacity-90 transition`}>
+                  <feature.icon className={`h-6 w-6 ${feature.iconColor}`} />
+                </div>
+
+                {/* Title */}
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                  {feature.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-sm text-slate-600 leading-relaxed flex-1">
+                  {feature.desc}
+                </p>
               </div>
-
-              {/* Title */}
-              <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                {feature.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-sm text-slate-600 leading-relaxed">
-                {feature.desc}
-              </p>
 
             </div>
           ))}
@@ -124,7 +148,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {departments.slice(0, 6).map((dept) => (
               <Link to={`/departments/${dept.id}`} key={dept.id}>
-                <div className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden group">
+                <div className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden group h-full flex flex-col">
 
                   <img
                     src={dept.image}
@@ -132,11 +156,11 @@ export default function Home() {
                     className="w-full h-40 object-cover group-hover:scale-105 transition"
                   />
 
-                  <div className="p-4">
+                  <div className="p-4 flex-1 flex flex-col">
                     <h3 className="text-lg font-bold text-slate-900 mb-1">
                       {dept.title}
                     </h3>
-                    <p className="text-sm text-slate-500">
+                    <p className="text-sm text-slate-500 flex-1">
                       {dept.description}
                     </p>
                   </div>

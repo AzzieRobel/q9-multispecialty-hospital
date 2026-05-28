@@ -54,7 +54,7 @@ export default function Hero() {
                 </Link>
 
                 <a
-                  href="tel:+917702021224"
+                  href="tel:+62819555831"
                   className="w-full sm:w-auto flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white/10 text-white border border-white/20 rounded-full font-semibold hover:bg-white/20 transition-all backdrop-blur-md"
                 >
                   Emergency Contact
