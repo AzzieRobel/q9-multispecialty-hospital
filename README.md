@@ -20,7 +20,7 @@ Access contact and location details
 
 Navigate smoothly across all sections
 
-The goal is not just design — but to build a realistic healthcare experience using React and modern UI practices.
+The goal is not just design - but to build a realistic healthcare experience using React and modern UI practices.
 
 🌐 Live Demo
 

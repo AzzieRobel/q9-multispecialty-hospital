@@ -36,10 +36,10 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
             {[
-              { icon: Phone, title: 'Primary Call', info: '+91 7702021224', sub: '24/7 Availability', color: 'bg-blue-600' },
-              { icon: Phone, title: 'Secondary', info: '+91 7672021224', sub: 'Support & Inquiry', color: 'bg-teal-600' },
+              { icon: Phone, title: 'Primary Call', info: '+62 819555831', sub: '24/7 Availability', color: 'bg-blue-600' },
+              { icon: Phone, title: 'Secondary', info: '+62 819555833', sub: 'Support & Inquiry', color: 'bg-teal-600' },
               { icon: Mail, title: 'Email Us', info: 'q9hospital2026@gmail.com', sub: 'General Inquiries', color: 'bg-slate-800' },
-              { icon: MapPin, title: 'Visit Us', info: 'Sriramanagar, Lankelapalem', sub: 'Anakapalli Dist - 531019', color: 'bg-blue-500' },
+              { icon: MapPin, title: 'Visit Us', info: 'Jawa Tengah, Indonesia', sub: 'Jl Kom L Yos Sudarso 33', color: 'bg-blue-500' },
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -140,7 +140,7 @@ export default function Contact() {
         {/* Map */}
         <div className="mt-24 bg-white rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 h-[450px] relative">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.288282361664!2d83.08018!3d17.81882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39626305a468d7%3A0x6e8a4a5b2ab54b68!2sLankelapalem%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4289.423029187333!2d116.0756700754145!3d-8.57273558697969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc066133dc8ed%3A0x29819c1b0f7e537d!2sJl.%20Yos%20Sudarso%20No.33%2C%20Ampenan%20Tengah%2C%20Kec.%20Ampenan%2C%20Kota%20Mataram%2C%20Nusa%20Tenggara%20Bar.%2083511%2C%20Indonesia!5e1!3m2!1sen!2stw!4v1779972235011!5m2!1sen!2stw"
             width="100%"
             height="100%"
             style={{ border: 0 }}

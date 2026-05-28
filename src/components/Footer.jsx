@@ -84,17 +84,18 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-blue-500 mt-1" />
                 <span>
-                  D.No: 10-21/1/6, Sriramanagar,<br />
-                  Near Petrol Bunk, Opp. GVMC Park,<br />
-                  Lankelapalem, Anakapalli Dist - 531019
+                  Jl. Yos Sudarso No.33, Ampenan <br />
+                  Tengah, Kec. Ampenan, Kota<br />
+                  Mataram, Nusa Tenggara Bar.<br />
+                  83511, Indonesia
                 </span>
               </li>
 
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-blue-500" />
                 <span>
-                  +91 7702021224<br />
-                  +91 7672021224
+                  +62 819555831<br />
+                  +62 819555833
                 </span>
               </li>
 
