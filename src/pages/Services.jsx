@@ -123,9 +123,14 @@ export default function Services() {
                 </li>
               ))}
             </ul>
-            <button className="px-10 py-4 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition-all shadow-lg">
+            <a
+              href="https://www.ncbi.nlm.nih.gov/books/NBK45440/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex px-10 py-4 bg-slate-900 text-white rounded-full font-bold hover:bg-slate-800 transition-all shadow-lg"
+            >
               Learn More About Telemedicine
-            </button>
+            </a>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}
